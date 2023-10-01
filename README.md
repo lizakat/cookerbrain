@@ -1,5 +1,5 @@
-# See the Light
+# CookerBrain
 ## Navigation
-* [SRS of program](https://github.com/lizakat/cookerbtain/blob/main/documentaion/SRS.md)
-* [images](https://github.com/lizakat/cookerbtain/tree/main/images)
+* [Documentation](https://github.com/lizakat/cookerbtain/blob/main/documentaion/SRS.md)
+* [Mockups](https://github.com/lizakat/cookerbtain/tree/main/images)
 ## Excepted Result
