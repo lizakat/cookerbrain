@@ -7,7 +7,7 @@
 1.2.1 [Исходные данные](#initial_data)  
 1.2.2 [Возможности бизнеса](#business_opportunities)  
 1.2.3 [Границы проекта](#project_boundary)  
-1.3 [Аналоги](#analogues) 
+1.3 [Аналоги](#analogues)  
 2 [Требования пользователя](#user_requirements)  
 2.1 [Интерфейс пользователя](#user_interface)  
 2.2 [Характеристики пользователей](#user_specifications)  
