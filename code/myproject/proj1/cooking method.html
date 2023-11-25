@@ -82,7 +82,23 @@
       <p class="text">Cooker Brain</p>
     </div>
 
-      <!-- CREATE A RECIPE -->
+      <!-- COOKING METHOD -->
+
+<style>
+    .recipe-steps {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .recipe-steps li {
+        background: #f8f8f84a;
+        padding: 10px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+</style>
 
 <section class="special-dish text-center" aria-labelledby="dish-label">
     <div class="special-dish-banner">
@@ -101,21 +117,40 @@
 
             <div style="margin-top: 30px;"></div>
 
-            <div class="wrapper" style="margin-top: 30px; display: flex; flex-direction: column;">
-                <a href="ingredients.html" class="btn btn-primary">
-                    <span class="text text-1">Ingredients</span>
-                    <span class="text text-2" aria-hidden="true">Ingredients</span>
-                </a>
-                <a href="cooking method.html" class="btn btn-primary">
-                    <span class="text text-1">Cooking Method</span>
-                    <span class="text text-2" aria-hidden="true">Cooking Method</span>
-                </a>
+            <!-- Добавлен текст с шагами приготовления -->
+            <div class="recipe-steps">
+                <ol>
+                    <li><span>STEP 1:</span> Ensure all vegetables are fresh and of good quality. Use Cherry tomatoes or substitute with sweet pink or red tomatoes. Choose fleshy Bulgarian peppers (red, orange, or yellow) and medium to large shrimps suitable for roasting. Select recently produced Feta cheese and stoneless olives.</li>
+                    <li><span>STEP 2:</span> Rinse all vegetables, green onions, and basil under running water.</li>
+                    <li><span>STEP 3:</span> Remove stem, seeds, and white veins from the bell pepper. Cut into long strips, then dice uniformly.</li>
+                    <li><span>STEP 4:</span> Peel cucumbers if the skin is tough. Remove the bitter part and dice. Ensure all vegetables are of the same size.</li>
+                    <li><span>STEP 5:</span> Remove the tails of tomatoes. Cut Cherry tomatoes in half, and large tomatoes into cubes.</li>
+                    <li><span>STEP 6:</span> Chop green onions and tear basil leaves into smaller pieces if needed.</li>
+                    <li><span>STEP 7:</span> Cut Feta cheese into uniform cubes.</li>
+                    <li><span>STEP 8:</span> Clean and peel shrimps, then sauté in olive oil for 2 minutes.</li>
+                    <li><span>STEP 9:</span> Mix 2 tablespoons of olive oil with 1 tablespoon of lemon juice. Add salt and Provencal herbs, dissolve salt, and set aside.</li>
+                    <li><span>STEP 10:</span> Put all vegetables and herbs in a deep bowl, add olives or olives.</li>
+                    <li><span>STEP 11:</span> Pour half of the dressing over the salad, mix well.</li>
+                    <li><span>STEP 12:</span> Add diced Feta and sautéed shrimps. Pour the remaining dressing evenly. Adjust salt to taste.</li>
+                    <li><span>STEP 13:</span> Serve immediately, garnish with basil leaves and lemon slices. The freshness of vegetables, combined with the aroma of sautéed shrimps, makes this Greek salad irresistible. <span>Enjoy!</span> </li>
+                </ol>
             </div>
+
+            <!-- Добавлен отступ между текстом и кнопкой -->
+            <div style="margin-top: 30px;"></div>
+
+            <a href="ingredients.html" class="btn btn-primary">
+                <span class="text text-1">Ingredients</span>
+                <span class="text text-2" aria-hidden="true">Ingredients</span>
+            </a>
         </div>
     </div>
 
     <img src="../proj1/static/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
 </section>
+
+<!-- ... Ваш код после секции "CREATE A RECIPE" ... -->
+
 
   <!-- 
     - #FOOTER
@@ -127,9 +162,6 @@
     </p>
   </div>
 </footer>
-
-
-
 
 
 <!-- 
@@ -152,5 +184,4 @@
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
-
 </html>

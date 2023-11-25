@@ -82,52 +82,71 @@
       <p class="text">Cooker Brain</p>
     </div>
 
-         <!-- 
-        -  #CREATE A RECIPE
-      -->
+      <!-- INGREDIENTS -->
 
-      <section class="special-dish  bg-black-10 text-center" aria-labelledby="dish-label">
+      <style>
+        .recipe-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+    
+        .recipe-list li {
+            background: #f8f8f84a;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 
-        <div class="special-dish-banner">
-            <form action="/upload" method="post" enctype="multipart/form-data">
-                <label for="photoUpload" class="img-cover">
-                  <img src="../proj1/static/images/foto.jpg" width="940" height="900" loading="lazy" alt="special dish">
-                </label>
-                <input type="file" id="photoUpload" name="photo" style="display: none;" accept="image/*">
-                <button type="submit">Загрузить фото</button>
-              </form>
-              
+<section class="special-dish text-center" aria-labelledby="dish-label">
+    <div class="special-dish-banner">
+        <img src="../proj1/static/images/greek salad.jpeg" width="940" height="900" loading="lazy" alt="special dish" class="img-cover">
+    </div>
+
+    <div class="special-dish-content bg-black-10">
+        <div class="container">
+            <i class="fa-solid fa-heart fa-beat fa-2xl" style="color: #ffffff;"></i>
+            <h2 class="headline-1 section-title">Greek Salad</h2>
+
+            <div class="time-wrapper">
+                <i class="fa-regular fa-clock fa-2xl" style="color: #ffffff;"></i>
+                <span class="time-text">30 minutes</span>
+            </div>
+
+            <div style="margin-top: 30px;"></div>
+
+            <ul class="recipe-list">
+       
+                <li>Cherry tomatoes – 200 g</li>
+                <li>Bulgarian pepper – 200 g</li>
+                <li>Shrimp – 200 g</li>
+                <li>Green onion – 30 g</li>
+                <li>Shrimp – 200 g</li>
+                <li>Olives – 100 g</li>
+                <li>Lemon juice – 1 tbsp</li>
+                <li>Olive oil – 3 tbsp</li>
+                <li>Basil – 2 sprig(s)</li>
+                <li>Spices (Provencal herbs) – 0.5 tsp </li>
+                <li>Salt – 0.5 tsp.</li>
+            </ul>
+
+            <div class="wrapper" style="margin-top: 30px; display: flex; flex-direction: column;">
+                <a href="shop_list.html" class="btn btn-primary">
+                    <span class="text text-1">Create a shopping list</span>
+                    <span class="text text-2" aria-hidden="true">Create a shopping list</span>
+                </a>
+                <a href="cooking method.html" class="btn btn-primary">
+                    <span class="text text-1">Cooking Method</span>
+                    <span class="text text-2" aria-hidden="true">Cooking Method</span>
+                </a>
+            </div>
         </div>
+    </div>
 
-        <div class="special-dish-content bg-black-10">
-          <div class="container">
-            
-            <div class="separator-container">
-                <h1 class="headline-1 section-title h1-above">Creating a Recipe</h1>
-                <img src="../proj1/static/images/separator.svg" alt="Separator" class="separator-image">
-              </div>
-              
-
-            <a href="#" class="btn btn-secondary slider-reveal">
-                <span class="text text-1">View Сategories</span>
-  
-                <span class="text text-2" aria-hidden="true">View Сategories</span>
-              </a>
-            
-            <a href="add ingredients.html" class="btn btn-primary">
-                <span class="text text-1">Add Ingredients</span>
-  
-                <span class="text text-2" aria-hidden="true">Add Ingredients</span>
-              </a>
-
-            <a href="add cooking method.html" class="btn btn-primary">
-                <span class="text text-1">Add Cooking Method</span>
-  
-                <span class="text text-2" aria-hidden="true">Add Cooking Method</span>
-              </a>
-          </div>
-        </div>
-      </section>
+    <img src="../proj1/static/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+</section>
 
   <!-- 
     - #FOOTER
@@ -139,9 +158,6 @@
     </p>
   </div>
 </footer>
-
-
-
 
 
 <!-- 
@@ -164,5 +180,4 @@
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
-
 </html>

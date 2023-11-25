@@ -23,31 +23,36 @@
 
 </head>
 <body>
-    <div class="topbar">
-        <div class="container">
-            <div class="box">
-                <input type="text" placeholder="Type to search">
-                <a href="#">
-                    <i class="fas fa-search icon"></i>
-                </a>
-            </div>
-
-            <div class="icon">
-                <i class="fa-solid fa-heart" style="color: #fffafa;"></i>
-                <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
-                    <i class="fa-solid fa-user" style="color: #ffffff;"></i>
-                    <i id="homeIcon" class="fas fa-home" style="color: #ffffff;"></i>
-                </a>
-            </div>
+  <div class="topbar">
+    <div class="container">
+        <div class="box">
+            <input type="text" placeholder="Type to search">
+            <a href="#">
+                <i class="fas fa-search icon"></i>
+            </a>
         </div>
-     </div>
-     <script>
-        document.getElementById('homeIcon').addEventListener('click', goBack);
 
-        function goBack() {
-            window.history.back();
-        }
-    </script> 
+        <div class="icon">
+            <i class="fa-solid fa-heart" style="color: #fffafa;"></i>
+            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+            <a href="log.html">
+                <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+            </a>
+                <i id="homeIcon" class="fa-solid fa-arrow-rotate-left" style="color: #ffffff;"></i> 
+                <a href="index.html">
+                    <i class="fa-solid fa-home fa-2xl" style="color: #ffffff;"></i>
+                </a>
+        </div>
+    </div>
+ </div>
+ <script>
+    document.getElementById('homeIcon').addEventListener('click', goBack);
+
+    function goBack() {
+        window.history.back();
+    }
+</script> 
+
 <!-- 
     - favicon - лого при загрузке 
   <link rel="shortcut icon" href="...." type="image/svg+xml">-->

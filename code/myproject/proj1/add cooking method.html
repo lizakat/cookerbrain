@@ -82,52 +82,71 @@
       <p class="text">Cooker Brain</p>
     </div>
 
-         <!-- 
-        -  #CREATE A RECIPE
-      -->
+      <!-- INGREDIENTS -->
 
-      <section class="special-dish  bg-black-10 text-center" aria-labelledby="dish-label">
+      <style>
+        .recipe-list {
+            display: flex;
+    flex-direction: column;
+    align-items: center;
+        }
+    
+        .recipe-list button {
+            background: #f8f8f84a;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
-        <div class="special-dish-banner">
-            <form action="/upload" method="post" enctype="multipart/form-data">
-                <label for="photoUpload" class="img-cover">
-                  <img src="../proj1/static/images/foto.jpg" width="940" height="900" loading="lazy" alt="special dish">
-                </label>
-                <input type="file" id="photoUpload" name="photo" style="display: none;" accept="image/*">
-                <button type="submit">Загрузить фото</button>
-              </form>
-              
-        </div>
+        .center-btn {
+    display: block;
+    margin: 0 auto; 
+}
 
-        <div class="special-dish-content bg-black-10">
-          <div class="container">
+    </style>
+
+<section class="special-dish text-center" aria-labelledby="dish-label">
+    <div class="special-dish-banner">
+        <img src="../proj1/static/images/foto.jpg" width="940" height="900" loading="lazy" alt="special dish" class="img-cover">
+    </div>
+
+    <div class="special-dish-content bg-black-10">
+        <div class="container">
+            <i class="fa-solid fa-heart fa-beat fa-2xl" style="color: #ffffff;"></i>
+
             
-            <div class="separator-container">
-                <h1 class="headline-1 section-title h1-above">Creating a Recipe</h1>
-                <img src="../proj1/static/images/separator.svg" alt="Separator" class="separator-image">
-              </div>
-              
+            <button id="changeTitleBtn" class="headline-1 section-title center-btn" onclick="changeTitle()">Change Title</button>
 
-            <a href="#" class="btn btn-secondary slider-reveal">
-                <span class="text text-1">View Сategories</span>
-  
-                <span class="text text-2" aria-hidden="true">View Сategories</span>
-              </a>
-            
-            <a href="add ingredients.html" class="btn btn-primary">
-                <span class="text text-1">Add Ingredients</span>
-  
-                <span class="text text-2" aria-hidden="true">Add Ingredients</span>
-              </a>
+            <div style="margin-top: 30px;"></div>
 
-            <a href="add cooking method.html" class="btn btn-primary">
-                <span class="text text-1">Add Cooking Method</span>
-  
-                <span class="text text-2" aria-hidden="true">Add Cooking Method</span>
-              </a>
-          </div>
-        </div>
-      </section>
+            <div class="recipe-list">
+                <button>Add Step 1</button>
+                <button>Add Step 2</button>
+                <button>Add Step 3</button>
+                <button>Add Step 4</button>
+                <button>Add Step 5</button>
+                <button>Add Step 6</button>
+                <button>Add Step 7</button>
+                <button>Add Step 8</button>
+                <button>Add Step 9</button>
+                <button>Add Step 10</button>
+                <button>Add Step 11</button>
+            </div>
+
+
+    <img src="../proj1/static/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+</section>
+
+<script>
+    function changeTitle() {
+        var newTitle = prompt("Enter a new title:");
+        if (newTitle !== null) {
+            document.getElementById("dishTitle").innerText = newTitle;
+        }
+    }
+</script>
+
 
   <!-- 
     - #FOOTER
@@ -139,9 +158,6 @@
     </p>
   </div>
 </footer>
-
-
-
 
 
 <!-- 
@@ -164,5 +180,4 @@
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
-
 </html>
