@@ -141,7 +141,7 @@
 <a name="results"/>
 
 ## 7 Представление результатов
-Результаты тестирования представлены в документе ["Представление результатов"](https://github.com/lizakat/cookerbrain/tree/main/testing/Test results.md).
+Результаты тестирования представлены в документе ["Представление результатов"](https://github.com/lizakat/cookerbrain/blob/main/testing/Test%20results.md).
 
 <a name="conclusion"/>
 
