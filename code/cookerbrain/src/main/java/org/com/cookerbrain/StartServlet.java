@@ -13,13 +13,13 @@ public class StartServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-        out.println("<script>window.location.href='http://localhost:8888/resources/index.html';</script>");
+        out.println("<script>window.location.href='http://localhost:8888/resources/log.html';</script>");
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-        out.println("<script>window.location.href='http://localhost:8888/index.html';</script>");
+        out.println("<script>window.location.href='http://localhost:8888/log.html';</script>");
     }
 }
