@@ -7,6 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.security.Principal;
+
 @Controller
 @RequiredArgsConstructor
 public class IngredientController {
@@ -14,14 +16,14 @@ public class IngredientController {
 
 
     @GetMapping("/show_shop_list") //shop list
-    public String ingredients(Model model) {
-        model.addAttribute("ingredients", ingredientService.listIngredients());
+    public String ingredients(Model model, Principal principal) {
+        model.addAttribute("ingredients", ingredientService.listIngredients(principal));
         return "show_shop_list";
     }
 
     @PostMapping("/shop_list/add")
-    public String createIngredient(@ModelAttribute("ingredientName") Ingredient ingredient) {
-        ingredientService.saveIngredient(ingredient);
+    public String createIngredient(Ingredient ingredient, Principal principal) {
+        ingredientService.saveIngredient(principal, ingredient);
         return "redirect:/show_shop_list";
     }
 

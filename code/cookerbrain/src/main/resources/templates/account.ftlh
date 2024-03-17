@@ -27,7 +27,7 @@
                 <a href="/shop_list">
                     <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
                 </a>
-                <a href="login.ftlh">
+                <a href="/login">
                     <i class="fa-solid fa-user" style="color: #ffffff;"></i>
                 </a>
                 <i id="homeIcon" class="fa-solid fa-arrow-rotate-left" style="color: #ffffff;"></i>
@@ -76,7 +76,8 @@
     <script src="../static/script/script.js"></script>
 
     <div class="wrapper">
-
+        <#if user.email??>
+        <h2>Username: <i>${user.name}</i></h2>
             <form action="/logout" method="POST">
                 <h1>Logout</h1>
                 <input type="hidden" name="_csrf" value="${_csrf.token}">
@@ -85,6 +86,7 @@
             <#if errorMessage??>
                 <h2 style="color: red">${errorMessage}</h2>
             </#if>
+        </#if>
         </div>
     </body>
 

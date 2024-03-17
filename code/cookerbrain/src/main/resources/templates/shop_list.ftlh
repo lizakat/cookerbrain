@@ -148,11 +148,12 @@
             </div>
 
             <div class="special-dish-content bg-black-10">
-                <form action="/shop_list/add" method="POST">
+                <form action="/shop_list/add" method="POST" enctype="multipart/form-data">
                     <div class="container">
                         <h2 class="headline-1 section-title">Create a shopping list</h2>
                         <div style="margin-top: 30px;"></div>
                         <div class="recipe-list">
+                            <input type="hidden" name="_csrf" value="${_csrf.token}">
                             <div class="input-box3">
                                 <input type="text" name="name" placeholder="Add Product" required>
                             </div>

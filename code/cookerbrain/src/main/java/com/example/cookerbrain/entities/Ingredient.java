@@ -18,7 +18,9 @@ public class Ingredient {
     private Long ID;
     @Column(name="name")
     private String name;
-
+    @ManyToOne(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
+    @JoinColumn
+    private User user;
     public void setId(long l) {
         this.ID = l;
     }
