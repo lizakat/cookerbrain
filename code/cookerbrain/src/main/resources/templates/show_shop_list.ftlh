@@ -270,44 +270,7 @@
 
         </section>
 
-        <#--<script>
-            $(document).ready(function () {
-                $("#loginForm").submit(function (event) {
-                    event.preventDefault();
 
-                    $.ajax({
-                        type: "POST",
-                        url: "/RemoveFromShopListServlet",
-                        data: $("#loginForm").serialize(),
-                        success: function (response) {
-                            var result = JSON.parse(response);
-                            showMessage(result.message, result.status);
-                        },
-                        error: function () {
-                            showMessage("An error occurred during the request.", "error");
-                        }
-                    });
-                });
-
-                function showMessage(message, status) {
-                    // Очищаем предыдущее сообщение
-                    $("#message").empty();
-
-                    // Создаем элемент для сообщения
-                    var messageElement = $("<div></div>").text(message);
-
-                    // Добавляем стиль в зависимости от статуса
-                    if (status === "error") {
-                        messageElement.css("color", "red");
-                    } else if (status === "success") {
-                        messageElement.css("color", "green");
-                    }
-
-                    // Добавляем сообщение к элементу с id="message"
-                    $("#message").append(messageElement);
-                }
-            });
-        </script>-->
         <!--
     - #FOOTER
   -->
@@ -320,36 +283,6 @@
         </div>
         </footer>
 
-        <!--
-- custom js link
--->
-        <#--<script src="../static/script/script.js"></script>
-        <script>
-            function fetchData() {
-                $.ajax({
-                    type: 'GET',
-                    url: '/ShowShopListServlet',
-                    dataType: 'json',
-                    success: function (data) {
-                        // Clear existing content
-                        $('#listContainer').empty();
-
-                        // Append new data
-                        $.each(data, function (index, item) {
-                            $('#listContainer').append('<li>' + item.id + ': ' + item.item + '</li>');
-                        });
-                    },
-                    error: function (error) {
-                        console.log('Error fetching data: ' + error.responseText);
-                    }
-                });
-            }
-
-            // Call the function on page load
-            $(document).ready(function () {
-                fetchData();
-            });
-        </script>-->
 
         <!--
     - ionicon link
