@@ -14,10 +14,10 @@
 
 <body>
   <div class="wrapper">
-    <form action="http://localhost:8888/LoginServlet" method="POST">
+    <form action="/login" method="POST">
       <h1>Login</h1>
       <div class="input-box">
-        <input type="text" name="login" placeholder="Username" required>
+        <input type="email" name="username" placeholder="Email" required>
         <i class="fa-solid fa-user" style="color: #ffffff;"></i>
       </div>
       <div class="input-box">
@@ -28,14 +28,18 @@
         <label><input type="checkbox">Remember Me</label>
         <a href="#">Forgot Password</a>
       </div>
+      <input type="hidden" name="_csrf" value="${_csrf.token}">
       <button type="submit" class="btn">Login</button>
       <div class="register-link">
-        <p>Don't have an account? <a href="log2.html">Register</a></p>
+        <p>Don't have an account? <a href="/registration">Register</a></p>
       </div>
     </form>
     <div id="message"></div>
+    <#if errorMessage??>
+        <h2 style="color: red">${errorMessage}</h2>
+    </#if>
   </div>
-  <script>
+<!--  <script>
     $(document).ready(function () {
       $("#loginForm").submit(function (event) {
         event.preventDefault();
@@ -72,7 +76,7 @@
         $("#message").append(messageElement);
       }
     });
-  </script>
+  </script>-->
 </body>
 
 </html>

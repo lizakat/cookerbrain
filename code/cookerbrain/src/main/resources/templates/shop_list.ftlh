@@ -42,7 +42,7 @@
                     <i class="fa-solid fa-heart" style="color: #fffafa;"></i>
                 </a>
 
-                <a href="log.html">
+                <a href="/account">
                     <i class="fa-solid fa-user" style="color: #ffffff;"></i>
                 </a>
                 <i id="homeIcon" class="fa-solid fa-arrow-rotate-left" style="color: #ffffff;"></i>

@@ -46,7 +46,7 @@
                 <a href="/shop_list">
                     <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
                 </a>
-                <a href="log.html">
+                <a href="login.ftlh">
                     <i class="fa-solid fa-user" style="color: #ffffff;"></i>
                 </a>
                 <i id="homeIcon" class="fa-solid fa-arrow-rotate-left" style="color: #ffffff;"></i>

@@ -67,7 +67,7 @@
             <a href="/show_shop_list">
                 <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
             </a>
-            <a href="log.html">
+            <a href="/account">
                 <i class="fa-solid fa-user" style="color: #ffffff;"></i>
             </a>
         </div>

@@ -13,10 +13,14 @@
 
 <body>
   <div class="wrapper">
-    <form action="http://localhost:8888/LoginServlet2" method="POST">
+    <form action="/registration" method="POST">
       <h1>Register</h1>
       <div class="input-box">
-        <input type="text" name="login" placeholder="Username" required>
+        <input type="text" name="name" placeholder="Name" required>
+        <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+      </div>
+      <div class="input-box">
+        <input type="text" name="email" placeholder="Email" required>
         <i class="fa-solid fa-user" style="color: #ffffff;"></i>
       </div>
       <div class="input-box">
@@ -28,8 +32,9 @@
         <a href="#">Forgot Password</a>
       </div>
       <button type="submit" class="btn">Register</button>
+      <input type="hidden" name="_csrf" value="${_csrf.token}">
       <div class="register-link">
-        <p>Already have an account? <a href="log.html">Login</a></p>
+        <p>Already have an account? <a href="/login">Login</a></p>
       </div>
     </form>
   </div>
