@@ -7,4 +7,5 @@
 * [Backlog](https://github.com/lizakat/cookerbrain/tree/main/backlog)
 * [Development](https://github.com/lizakat/cookerbrain/tree/main/development)
 * [Pair programming](https://github.com/lizakat/cookerbrain/tree/main/pair%20programming)
+* [Debt](https://github.com/lizakat/cookerbrain/tree/main/debt)
 * [Source Code](https://github.com/lizakat/cookerbrain/tree/main/code/cookerbrain)
