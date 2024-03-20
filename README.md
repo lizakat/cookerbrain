@@ -6,4 +6,5 @@
 * [Testing](https://github.com/lizakat/cookerbrain/blob/main/testing)
 * [Backlog](https://github.com/lizakat/cookerbrain/tree/main/backlog)
 * [Development](https://github.com/lizakat/cookerbrain/tree/main/development)
+* [Pair programming](https://github.com/lizakat/cookerbrain/tree/main/pair%20programming)
 * [Source Code](https://github.com/lizakat/cookerbrain/tree/main/code/cookerbrain)
