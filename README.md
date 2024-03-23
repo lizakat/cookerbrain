@@ -9,5 +9,5 @@
 * [Pair programming](https://github.com/lizakat/cookerbrain/tree/main/pair%20programming)
 * [Debt](https://github.com/lizakat/cookerbrain/tree/main/debt)
 * [UX improvement](https://github.com/lizakat/cookerbrain/blob/main/ux%20improvement)
-* 
+
 * [Source Code](https://github.com/lizakat/cookerbrain/tree/main/code/cookerbrain)
