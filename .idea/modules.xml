@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/code/cookerbrain/cookerbrain.iml" filepath="$PROJECT_DIR$/code/cookerbrain/cookerbrain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code/cookerbrain_old/cookerbrain (1) (org.example).iml" filepath="$PROJECT_DIR$/code/cookerbrain_old/cookerbrain (1) (org.example).iml" />
+    </modules>
+  </component>
+</project>

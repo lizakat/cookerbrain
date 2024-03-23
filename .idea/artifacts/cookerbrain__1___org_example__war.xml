@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cookerbrain (1) (org.example):war">
+    <output-path>$PROJECT_DIR$/code/cookerbrain_old/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>cookerbrain (1) (org.example)</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="cookerbrain.war">
+      <element id="artifact" artifact-name="cookerbrain (1) (org.example):war exploded" />
+    </root>
+  </artifact>
+</component>
