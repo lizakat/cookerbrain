@@ -28,5 +28,5 @@ public class MainController {
     }*/
 
    /* @GetMapping("/account")
-    public String account() { return "account.html"; }*/
+    public String account() { return "account.ftlh"; }*/
 }

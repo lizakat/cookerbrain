@@ -165,7 +165,7 @@
 
                 <h2 class="headline-1 section-title text-center">Shopping Lists</h2>
 
-                <ul class="grid-list">
+                <ul>
 
                     <#--<li>
                         <div class="menu-card hover:card">
@@ -240,6 +240,22 @@
                             <button type="submit" class="btn">Delete</button>
                         </form>
                     </div>-->
+                    <div class="ingredient-container">
+                        <#list ingredients as ingredient>
+                            <div style="margin-left:20px;">
+                                <p>${ingredient.id} ${ingredient.name}</p>
+                            </div>
+                        </#list>
+
+                        <form action="/show_shop_list/delete" method="POST">
+                            <div class="input-box1">
+                                <input type="text" name="id" placeholder="№ of item" required>
+                            </div>
+                            <button type="submit" class="btn">Delete</button>
+                        </form>
+                    </div>
+
+
 
 
                     <img src="../static/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
@@ -250,21 +266,6 @@
             </div>
 
 
-
-            <div class="ingredient-container">
-                <#list ingredients as ingredient>
-                    <div style="margin-left:20px;">
-                        <p>${ingredient.id} ${ingredient.name}</p>
-                    </div>
-                </#list>
-
-                <form action="/show_shop_list/delete" method="POST">
-                    <div class="input-box1">
-                        <input type="text" name="id" placeholder="№ of item" required>
-                    </div>
-                    <button type="submit" class="btn">Delete</button>
-                </form>
-            </div>
 
 
 
