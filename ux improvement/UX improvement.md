@@ -79,29 +79,22 @@
 
 # 3 Сравнение "до" и "после"
 
-**картинка
-
+![Аккаунт "до"](https://github.com/lizakat/cookerbrain/blob/main/ux%20improvement/account_before.jpg)
 Аккаунт "до"
 
-**картинка
-
+![Аккаунт "после"](https://github.com/lizakat/cookerbrain/blob/main/ux%20improvement/account_after.jpg)
 Аккаунт "после"
 
 Добавлены ссылки на часто посещаемые страницы для улучшения навигации.
 
-**картинка
-
-Вход "до"
-
-**картинка
-
+![Вход "после"](https://github.com/lizakat/cookerbrain/blob/main/ux%20improvement/login_after.jpg)
 Вход "после"
 
 Добавлены подсказки, помогающие пользователю избежать ошибок.
 
-**картинка
+![Масштаб1](https://github.com/lizakat/cookerbrain/blob/main/ux%20improvement/mashtab1.jpg)
 
-**картинка
+![Масштаб2](https://github.com/lizakat/cookerbrain/blob/main/ux%20improvement/mashtab2.jpg)
 
 Дизайн хорошо подстраивается под разный масштаб и устройства.
 
