@@ -92,7 +92,7 @@
 
 Добавлены подсказки, помогающие пользователю избежать ошибок.
 
-Дизайн на назных устройствах<br>
+Дизайн на разных устройствах<br>
 ![Масштаб1](https://github.com/lizakat/cookerbrain/blob/main/ux%20improvement/mashtab1.jpg)
 
 ![Масштаб2](https://github.com/lizakat/cookerbrain/blob/main/ux%20improvement/mashtab2.jpg)
